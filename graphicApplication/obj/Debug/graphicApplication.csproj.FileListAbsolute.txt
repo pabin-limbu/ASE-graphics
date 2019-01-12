@@ -8,3 +8,4 @@ C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphic
 C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.csproj.CoreCompileInputs.cache
 C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.exe
 C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.pdb
+C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.view.shapeGUI.resources
