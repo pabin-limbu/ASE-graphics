@@ -48,24 +48,24 @@
   <ItemGroup>
     <Compile Include="controller\simpleShapeFactory.cs" />
     <Compile Include="model\circle.cs" />
+    <Compile Include="model\line.cs" />
+    <Compile Include="model\Rectangle.cs" />
     <Compile Include="model\shape.cs" />
-    <Compile Include="view\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
+    <Compile Include="model\Triangle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\mainGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\mainGUI.Designer.cs">
+      <DependentUpon>mainGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\shapeGUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="view\shapeGUI.Designer.cs">
       <DependentUpon>shapeGUI.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="view\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +75,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="view\mainGUI.resx">
+      <DependentUpon>mainGUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\shapeGUI.resx">
       <DependentUpon>shapeGUI.cs</DependentUpon>
     </EmbeddedResource>

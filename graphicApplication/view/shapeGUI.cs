@@ -13,15 +13,16 @@ namespace graphicApplication.view
 {
     public partial class shapeGUI : Form
     {
-        public shapeGUI()
+        Bitmap shapeImage;
+        public shapeGUI(Bitmap shapeImage)
         {
+            this.shapeImage = shapeImage;
             InitializeComponent();
         }
 
         private void shapeGUI_Paint(object sender, PaintEventArgs e)
         {
-            simpleShapeFactory f = new simpleShapeFactory();
-            canvas.Image = f.createShape("circle");
+            canvas.Image = shapeImage;
         }
     }
 }

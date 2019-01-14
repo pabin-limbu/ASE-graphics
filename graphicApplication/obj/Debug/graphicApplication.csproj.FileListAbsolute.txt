@@ -2,10 +2,10 @@ C:\Users\pc\source\repos\graphicApplication\graphicApplication\bin\Debug\graphic
 C:\Users\pc\source\repos\graphicApplication\graphicApplication\bin\Debug\graphicApplication.exe
 C:\Users\pc\source\repos\graphicApplication\graphicApplication\bin\Debug\graphicApplication.pdb
 C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.csprojAssemblyReference.cache
-C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.Form1.resources
 C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.Properties.Resources.resources
 C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.csproj.GenerateResource.cache
 C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.csproj.CoreCompileInputs.cache
 C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.exe
 C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.pdb
 C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.view.shapeGUI.resources
+C:\Users\pc\source\repos\graphicApplication\graphicApplication\obj\Debug\graphicApplication.view.mainGUI.resources
