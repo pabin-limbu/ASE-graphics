@@ -47,8 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\simpleShapeFactory.cs" />
-    <Compile Include="model\circle.cs" />
+    <Compile Include="model\Circle.cs" />
     <Compile Include="model\line.cs" />
+    <Compile Include="model\Polygon.cs" />
     <Compile Include="model\Rectangle.cs" />
     <Compile Include="model\shape.cs" />
     <Compile Include="model\Triangle.cs" />

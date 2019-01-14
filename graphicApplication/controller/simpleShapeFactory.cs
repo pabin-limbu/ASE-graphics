@@ -15,36 +15,55 @@ namespace graphicApplication.controller
         
         public Bitmap createShape(string type,Bitmap drawArea) {
             this.type = type;
-          
-            if (type == "circle") {
-                shape shape = new circle();
+
+            if (type == "circle")
+            {
+                shape shape = new Circle(drawArea);
                 try
                 {
                     drawArea = shape.draw();
                     return drawArea;
                 }
-                catch (NotImplementedException e) {
+                catch (NotImplementedException e)
+                {
                     MessageBox.Show(e.Message);
                 };
 
 
-            } else if (type == "rectangle") {
-                graphicApplication.model.Rectangle shapeRec = new graphicApplication.model.Rectangle();
+            }
+            else if (type == "rectangle")
+            {
+                graphicApplication.model.Rectangle shapeRec = new graphicApplication.model.Rectangle(drawArea);
                 try
                 {
                     drawArea = shapeRec.draw(400, 400);
                     return drawArea;
                 }
-                catch (Exception e) {
+                catch (Exception e)
+                {
                     MessageBox.Show(e.Message);
                 }
-            } else if (type=="drawLine") {
+            }
+            else if (type == "drawLine")
+            {
                 line l = new line();
 
 
                 Pen p = new Pen(Color.Black, 2);
-              drawArea=l.drawLine(p,drawArea,0,300);
+                drawArea = l.drawLine(p, drawArea, 0, 300);
 
+                return drawArea;
+            }
+            else if (type == "triangle")
+            {
+
+                shape s = new Triangle(drawArea);
+                drawArea = s.draw();
+                return drawArea;
+            }
+            else if (type == "polygon") {
+                shape s = new Polygon(drawArea);
+                drawArea=s.draw();
                 return drawArea;
             }
             return null;

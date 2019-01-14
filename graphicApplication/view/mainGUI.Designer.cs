@@ -35,6 +35,7 @@
             this.btnRun = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.drawingCanvas = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -79,6 +80,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.btnRun);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 416);
@@ -116,6 +118,17 @@
             this.drawingCanvas.TabIndex = 0;
             this.drawingCanvas.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(76, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "test";
+            this.button1.UseMnemonic = false;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // mainGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,5 +155,6 @@
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox drawingCanvas;
+        private System.Windows.Forms.Button button1;
     }
 }

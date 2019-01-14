@@ -20,17 +20,27 @@ namespace graphicApplication.view
         private void btnRun_Click(object sender, EventArgs e)
         {
             Bitmap drawArea = new Bitmap(1000, 1000);
-            string command = txtCommandArea.Text;
+            String[] commands = txtCommandArea.Text.Split('\n');
             simpleShapeFactory f = new simpleShapeFactory();
-            Bitmap b = f.createShape(command,drawArea);
+            foreach (String s in commands) {
+                Bitmap b = f.createShape(s, drawArea);
+                drawArea = b;
+            }
+           
             //  shapeGUI gui = new shapeGUI(b);
             // gui.Show();
-            drawingCanvas.Image = b;
+            drawingCanvas.Image = drawArea;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String[] command = txtCommandArea.Text.Split('\n');
+          //  MessageBox.Show(""+command[0]);
         }
     }
 }
