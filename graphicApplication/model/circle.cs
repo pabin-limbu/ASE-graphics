@@ -27,14 +27,16 @@ namespace graphicApplication.model
             return drawArea;
         }
 
-        public Bitmap draw(double radius) {
+        public Bitmap draw(int radius) {
 
             Bitmap b = new Bitmap(1000, 1000);
+            Graphics g = Graphics.FromImage(drawArea);
 
+            Pen p = new Pen(Color.Black, 2);
+            System.Drawing.Rectangle rec = new System.Drawing.Rectangle(60, 60, radius*2, radius*2);
 
-
-
-            return b;
+            g.DrawEllipse(p, rec);
+            return drawArea;
         }
     }
 }
