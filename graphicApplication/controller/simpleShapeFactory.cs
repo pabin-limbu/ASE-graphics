@@ -106,7 +106,23 @@ namespace graphicApplication.controller
 
             }
             else if (shapeType.Equals("polygon")) {
+                MessageBox.Show("i am in poly");
 
+                String pName1 = command[1];
+                String pName2 = command[2];
+                String pName3 = command[3];
+                String pName4 = command[4];
+                String pName5 = command[5];
+
+                Point p1 = pointVarHolder[pName1];
+                Point p2 = pointVarHolder[pName2];
+                Point p3 = pointVarHolder[pName3];
+                Point p4 = pointVarHolder[pName4];
+                Point p5 = pointVarHolder[pName5];
+
+                Polygon p = new Polygon(drawArea);
+                drawArea = p.draw(p1, p2, p3,p4,p5);
+                return drawArea;
 
             }
 
@@ -127,7 +143,7 @@ namespace graphicApplication.controller
             {
                 Circle c = new Circle(drawArea);
                 String varName = command[1];
-                MessageBox.Show("" + varName);
+               // MessageBox.Show("" + varName);
                 int radius = normalVarHolder[varName];
                 drawArea = c.draw(radius);
                 return drawArea;

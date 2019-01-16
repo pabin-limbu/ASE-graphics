@@ -37,5 +37,14 @@ namespace graphicApplication.model
             return drawArea;
 
         }
+
+        public Bitmap draw(Point p1,Point p2,Point p3,Point p4,Point p5) {
+            Point[] points = { p1, p2, p3, p4, p5 };
+            Pen blackPen = new Pen(Color.Black, 3);
+            Graphics g = Graphics.FromImage(drawArea);
+            g.DrawPolygon(blackPen,points);
+            return drawArea;
+        }
+
     }
 }
